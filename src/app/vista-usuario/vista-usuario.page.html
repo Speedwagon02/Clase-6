@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Alumno</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Nombre Alumno: Ignacdio Alfaro</ion-label>
+    <ion-input [(ngModel)]="nombre"></ion-input>
+ </ion-item>
+ 
+
+
+</ion-content>
+<ion-button color="success" >Escanear QR</ion-button>
+<ion-button [routerLink]="['/home']">Volver</ion-button>

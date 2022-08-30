@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Agenda Veterinaria</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+   <ion-item>
+      <ion-label position="floating">Nombre Mascota:</ion-label>
+      <ion-input [(ngModel)]="nombre"></ion-input>
+   </ion-item>
+   <ion-item>
+      <ion-label position="floating">Edad:</ion-label>
+      <ion-input [(ngModel)]="edad"></ion-input>
+   </ion-item>
+   <ion-item>
+      <ion-label position="floating">Nombre Dueño:</ion-label>
+      <ion-input [(ngModel)]="nombreDueno"></ion-input>
+   </ion-item>
+   <ion-item>
+      <ion-button (click)="grabar()">Grabar</ion-button>
+      <ion-button [routerLink]="['/home']">Volver</ion-button>
+   </ion-item>
+</ion-content>

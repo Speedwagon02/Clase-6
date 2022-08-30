@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Lista de Mascotas Agendadas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <!-- for each (recorrer la lista_mascotas)-->
+    <ion-item *ngFor="let mascota of lista_mascotas">
+      <ion-label>
+        <h2>{{mascota.nombreMas}}</h2> 
+        <h4>{{mascota.nombreDue}}</h4>
+      </ion-label>
+      <ion-icon name="trash" (click)="mensajeEliminar(mascota.nombreMas)"></ion-icon>
+    </ion-item>
+  </ion-list>
+  <ion-item>
+      <ion-button [routerLink]="['/home']">Volver</ion-button>
+  </ion-item>
+</ion-content>

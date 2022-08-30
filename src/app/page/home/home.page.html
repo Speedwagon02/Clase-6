@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Aplicacion Mis Perris Ionic
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true"class="background">
+
+  <div id="container" class="background">
+    <!-- componente de Ionic Components (pag.web)-->
+    <!-- para dar un evento (click) -->
+    <ion-button (click)="pinchoBoton()"
+     color="primary">Captura de Datos (Agenda)
+    </ion-button>
+    <ion-button [routerLink]="['/pagina2']"
+     color="primary">Listado de Agenda
+    </ion-button>
+    <ion-button [routerLink]="['/vista-usuario']"
+     color="primary">Vista Usuario
+    </ion-button>
+    <ion-button color="success">Agregar FB</ion-button>
+    <ion-button color="success">Listar FB</ion-button>
+  </div>
+  
+
+</ion-content>
